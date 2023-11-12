@@ -1,0 +1,49 @@
+@media (max-width:426px){
+    body{
+        background:url(../images/bg-mobile.svg) var(--background-color) no-repeat;
+        background-size: cover;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .principal, .imagens{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: auto;
+        height: 60vh;
+        justify-content: center;
+        padding: 5px 50px;
+    }
+
+    .imagens .logo{
+        margin-bottom: 20px;
+        width: 50%;
+    }
+    .principal .registro{
+        align-items: center;
+    }
+    
+    .principal .registro h1{
+        font-size: 1.5em;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    
+    .principal .registro p{
+        margin-bottom: 25px;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .social{
+        align-self: center;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:376px){
+    .principal .imagens{
+        padding: 0px 10px;
+    }
+}
