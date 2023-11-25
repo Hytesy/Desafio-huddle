@@ -1,21 +1,23 @@
-@media (max-width:426px){
+@media (max-width:450px){
     body{
         background:url(../images/bg-mobile.svg) var(--background-color) no-repeat;
-        background-size: cover;
         flex-direction: column;
         padding: 0;
+        align-items: normal;
     }
 
     .principal, .imagens{
         display: flex;
-        flex-direction: column;
         margin: 0;
         width: auto;
-        height: 60vh;
+        height: 45vh;
         justify-content: center;
-        padding: 5px 50px;
+        padding: 0px 30px;
     }
 
+    .imagens{
+        justify-content: space-around;
+    }
     .imagens .logo{
         margin-bottom: 20px;
         width: 50%;
@@ -28,17 +30,29 @@
         font-size: 1.5em;
         margin-bottom: 15px;
         text-align: center;
+        font-weight: 500;
     }
     
     .principal .registro p{
         margin-bottom: 25px;
         font-size: 1rem;
         text-align: center;
+        font-weight: 300;
+    }
+
+    .principal .login{
+        width: 240px;
     }
 
     .social{
         align-self: center;
         margin-bottom: 10px;
+    }
+
+    .social .icone{
+        font-size: 12px;
+        width: 30px;
+        height: 30px;
     }
 }
 

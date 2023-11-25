@@ -2,7 +2,12 @@ body{
     background: url(../images/bg-desktop.svg) var(--background-color) no-repeat;
     background-size: cover;
     display: flex;
-    padding: 0 40px;
+    max-width: 1440px;
+    max-height: 900px;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 .principal, .imagens{
@@ -10,12 +15,13 @@ body{
     flex-direction: column;
     margin: 0 20px;
     width: auto;
-    height: 100vh;
-    justify-content: space-around;
+    height: 50%;
+    justify-content: center;
 }
 
 .imagens .logo{
     max-width: 220px;
+    margin-bottom: 50px;
 }
 .principal{
     max-width: 460px;
@@ -64,6 +70,7 @@ body{
 .principal .login:hover{
     color: white;
 }
+
 .social .icone{
     display:inline-flex;
       align-items: center;
@@ -71,20 +78,20 @@ body{
       width: 40px;
       height: 40px;
       border-radius: 50%;
-      border: 2px solid;
+      border: 1px solid;
       font-size: 20px;
-      margin: 2px;
+      margin: 5px;
       transition: 0.15s;
 }
 
 .social .icone:hover{
-    color: var(--soft-magenta);
+    color: hsl(316, 90%, 66%);
 }
 
 @media (min-width:1400px){
     .social{
         position: absolute;
-        bottom: 20px;
-        right: 15rem;
+        top: 90%;
+        right: 8rem;
     }
 }
