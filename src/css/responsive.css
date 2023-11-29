@@ -1,6 +1,7 @@
 @media (max-width:450px){
     body{
         background:url(../images/bg-mobile.svg) var(--background-color) no-repeat;
+        background-size: contain;
         flex-direction: column;
         padding: 0;
         align-items: normal;
